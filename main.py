@@ -17,6 +17,20 @@ Question = ['''1 = 4+5(2*3)''', '''2 = 5-2+3*5''', '''3 = 2/2-1*100''', '''4 = 2
 for x in Question:
   print(x)
 
+AnswerOptions = input('1 = 30, 40, 34, 38')
+AnswerOptions = input('2 = 20, 18, 15, 22')
+AnswerOptions = input('3 = -99, -80, -100, -98')
+AnswerOptions = input('4 = 3.50, 3.80, 3.60, 3.75')
+AnswerOptions = input('5 = 220, 224, 227, 230')
+AnswerOptions = input('6 = 40, 50, 60, 51')
+AnswerOptions = input('7 = 180, 170, 178, 190')
+AnswerOptions = input('8 = 2.50, 2.80, 2.65, 2.71')
+AnswerOptions = input('9 = 48, 49, 50, 51')
+AnswerOptions = input('10 = -130, -140, -150, -145')
+
+for x in AnswerOptions:
+  print(x)
+
 print("Let's see how many you got correct")
 
 #Answers list
