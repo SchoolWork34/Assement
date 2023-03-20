@@ -24,31 +24,37 @@ for x in Question:
 print("Choose out of the four options")
 
 #Answeroption list
-AnswerOptions = input('1 = 30, 40, 34, 38? ')
+AnswerOptions1 = input('1 = 30, 40, 34, 38? ')
+print(AnswerOptions1)
 
-AnswerOptions = input('2 = 20, 18, 15, 22? ')
+AnswerOptions2 = input('2 = 20, 18, 15, 22? ')
+print(AnswerOptions2)
 
-AnswerOptions = input('3 = -99, -80, -100, -98? ')
+AnswerOptions3 = input('3 = -99, -80, -100, -98? ')
+print(AnswerOptions3)
 
-AnswerOptions = input('4 = 3.50, 3.80, 3.60, 3.75? ')
+AnswerOptions4 = input('4 = 3.50, 3.80, 3.60, 3.75? ')
+print(AnswerOptions4)
 
-AnswerOptions = input('5 = 220, 224, 227, 230? ')
+AnswerOptions5 = input('5 = 220, 224, 227, 230? ')
+print(AnswerOptions5)
 
-AnswerOptions = input('6 = 40, 50, 60, 51? ')
+AnswerOptions6 = input('6 = 40, 50, 60, 51? ')
+print(AnswerOptions6)
 
-AnswerOptions = input('7 = 180, 170, 178, 190? ')
+AnswerOptions7 = input('7 = 180, 170, 178, 190? ')
+print(AnswerOptions7)
 
-AnswerOptions = input('8 = 2.50, 2.80, 2.65, 2.71? ')
+AnswerOptions8 = input('8 = 2.50, 2.80, 2.65, 2.71? ')
+print(AnswerOptions8)
 
-AnswerOptions = input('9 = 48, 49, 50, 51? ')
+AnswerOptions9 = input('9 = 48, 49, 50, 51? ')
+print(AnswerOptions9)
 
-AnswerOptions = input('10 = -130, -140, -150, -145? ')
-
-#Prints the AnswerOptions list
-print(AnswerOptions)
+AnswerOptions10 = input('10 = -130, -140, -150, -145? ')
+print(AnswerOptions10)
 
 print("Let's see how many you got correct")
-
 
 #Answers list
 Answers = ['''1 = 34''', '''2 = 18''', '''3 = -99''', '''4 = 3.75''', '''5 = 227''', '''6 = 50''', '''7 = 178''', '''8 = 2.71''', '''9 = 49''', '''10 = -140''']
@@ -58,6 +64,13 @@ for x in Answers:
   print(x)
 
 def answer_check():
-  if AnswerOptions == Answers:
-    count +=1
-
+  if AnswerOptions1 == 34
+  if AnswerOptions2 == 18
+  if AnswerOptions3 == -99
+  if AnswerOptions4 == 3.75
+  if AnswerOptions5 == 227
+  if AnswerOptions6 == 50
+  if AnswerOptions7 == 178
+  if AnswerOptions8 == 2.71
+  if AnswerOptions9 == 49
+  if AnswerOptions10 == -140
