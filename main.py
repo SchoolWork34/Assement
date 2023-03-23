@@ -1,9 +1,9 @@
-x = 0
+z = 0
 #Says welcome to this BEDMAS quiz
 print("Welcome to this BEDMAS quiz.")
 def correct():
-  if current_Question == Answers:
-    return x +1
+  if Answers_0 == Answers:
+    return z +1
 #Says do not use a calculator
 print("Do not use a calculator")
 #Asks for their name
@@ -25,3 +25,27 @@ for x in Question:
   current_Question+=1
   #print(current_Question)
   #print (Question[current_Question])
+  print(z)
+def percentage():
+  if z == 1:
+    return (userName + "you got 10% correct")
+  if z == 2:
+    return (userName + "you got 20% correct")
+  if z == 3:
+    return (userName + "you got 30% correct")
+  if z == 4:
+    return (userName + "you got 40% correct")
+  if z == 5:
+    return (userName + "you got 50% correct")
+  if z == 6:
+    return (userName + "you got 60% correct")
+  if z == 7:
+    return (userName + "you got 70% correct")
+  if z == 8:
+    return (userName + "you got 80% correct")
+  if z == 9:
+    return (userName + "you got 90% correct")
+  if z == 10:
+    return (userName + "you got 100% correct")
+
+print(percentage)
