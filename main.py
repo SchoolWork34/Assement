@@ -51,6 +51,7 @@ Answers = ['34','18','-99','3.75','227','50','178','2.71','49','-140']
 #prints the questions to the screen
 for x in Question:
   Answers_0 = input(Question[current_Question])
+  if Answers_0 != z:
+    print(userName + " you will be marked wrong. Enter a number next time.")
   current_Question+=1
-  print(z)
 print(percentage)
