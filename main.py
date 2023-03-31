@@ -1,7 +1,45 @@
 score = 0
-def correct():
-  if Answers_0 == Answers:
-    score + 1
+#Says welcome to this BEDMAS quiz
+print("Welcome to this BEDMAS quiz.")
+#Says do not use a calculator
+print("Do not use a calculator")
+
+#Asks for their name
+userName = input("Name please ")
+
+#Says lets get started with what ever their name is
+print("Lets get started " + userName)
+
+#Says what the math methods are 
+print("/ = divide, * = multiply, - = subtract, + = add")
+
+#Says here are the questions
+print("Here are the questions")
+
+current_Questions = 0
+#The question list
+Questions = {
+  "4+5(2*3):"['1. 34', '2. 35', '3. 36', '1'],
+  "5-2+3*5:"['1. 17', '2. 18', '3. 19', '2'], 
+  "2/2-1*100:"['1. -97', '2. -98', '3. -99', '3'], 
+  "2+2-2*2/2(2*4):"['1. 3.75', '2. 4.75', '3. 5.75', '1'], 
+  "15/3*5(2+3+4):"['1. 226', '2. 227', '3. 228', '2'], 
+  "7*14/2+1:"['1. 49', '2. 50', '3. 51', '2'], 
+  "2*2*2*22*1+2:"['1. 176', '2. 177', '3. 178', '3'], 
+  "3+4-5*6/7:"['1. 1.71', '2. 2.71', '3. 3.71', '2'], 
+  "10/1*3+5-7(9-11):"['1. 48', '2. 49', '3. 50', '2'], 
+  "10-10*15:"['1. -140', '2. -141', '3. -142', '1']
+}
+
+score = 0  
+for question_number,question in enumerate(Questions):
+    print ("Question",question_number+1) 
+    print (question)
+    for options in Questions[question][:-1]: 
+        print (options)
+    user_choice = input("Make your choice : ")
+    if user_choice == Questions[question][-1]: 
+        score += 1 
 
 def percentage(z):
   if score == 1:
@@ -25,34 +63,4 @@ def percentage(z):
   if score == 10:
     return(userName + "you got 100% correct")
 
-#Says welcome to this BEDMAS quiz
-print("Welcome to this BEDMAS quiz.")
-#Says do not use a calculator
-print("Do not use a calculator")
-
-#Asks for their name
-userName = input("Name please ")
-
-#Says lets get started with what ever their name is
-print("Lets get started " + userName)
-
-#Says what the math methods are 
-print("/ = divide, * = multiply, - = subtract, + = add")
-
-#Says here are the questions
-print("Here are the questions")
-
-current_Question = 0
-#The question list
-Question = ['4+5(2*3) = ','5-2+3*5 = ','2/2-1*100 = ','2+2-2*2/2(2*4) = ','15/3*5(2+3+4) = ','7*14/2+1 = ','2*2*2*22*1+2 = ','3+4-5*6/7 = ','10/1*3+5-7(9-11) = ','10-10*15 = ']
-
-#Answers list
-Answers = ['34','18','-99','3.75','227','50','178','2.71','49','-140']
-
-#prints the questions to the screen
-for x in Question:
-  Answers_0 = input(Question[current_Question])
-  current_Question+=1
-
-print(score)
 print(percentage)
