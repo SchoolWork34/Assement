@@ -1,7 +1,25 @@
 correct = 0
 def CorrectTest(correct):
-  if Answers_0 == Answers:
-    correct + 1
+  if Answers_0 == 34:
+    correct+=1
+  if Answers_1 == 18:
+    correct+=1
+  if Answers_2 == -99:
+    correct+=1
+  if Answers_3 == 3.75:
+    correct+=1
+  if Answers_4 == 227:
+    correct+=1
+  if Answers_5 == 50:
+    correct+=1
+  if Answers_6 == 178:
+    correct+=1
+  if Answers_7 == 2.71:
+    correct+=1
+  if Answers_8 == 49:
+    correct+=1
+  if Answers_9 == -140:
+    correct+=1
 
 def PercentageTest(correct):
   if correct == 1:
