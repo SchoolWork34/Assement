@@ -1,3 +1,49 @@
+correct = 0
+def correct(correct):
+  if Answers_0 == 34:
+    correct+=1
+  if Answers_1 == 18:
+    correct+=1
+  if Answers_2 == -99:
+    correct+=1
+  if Answers_3 == 3.75:
+    correct+=1
+  if Answers_4 == 227:
+    correct+=1
+  if Answers_5 == 50:
+    correct+=1
+  if Answers_6 == 178:
+    correct+=1
+  if Answers_7 == 2.71:
+    correct+=1
+  if Answers_8 == 49:
+    correct+=1
+  if Answers_9 == -140:
+    correct+=1
+
+def percentage():
+  if correct == 1:
+    return(userName + "you got 10% correct")
+  if correct == 2:
+    return(userName + "you got 20% correct")
+  if correct == 3:
+    return(userName + "you got 30% correct")
+  if correct == 4:
+    return(userName + "you got 40% correct")
+  if correct == 5:
+    return(userName + "you got 50% correct")
+  if correct == 6:
+    return(userName + "you got 60% correct")
+  if correct == 7:
+    return(userName + "you got 70% correct")
+  if correct == 8:
+    return(userName + "you got 80% correct")
+  if correct == 9:
+    return(userName + "you got 90% correct")
+  if correct == 10:
+    return(userName + "you got 100% correct")
+
+
 #Says welcome to this BEDMAS quiz
 print("Welcome to this BEDMAS quiz.")
 #Says do not use a calculator
@@ -15,50 +61,36 @@ print("/ = divide, * = multiply, - = subtract, + = add")
 #Says here are the questions
 print("Here are the questions")
 
+current_Question = 0
 #The question list
-Questions = {
-  "4+5(2*3):"['1: 34': '2: 35': '3: 36'],
-  "5-2+3*5:"['1: 17': '2: 18': '3: 19'],
-  "2/2-1*100:"['1: 97': '2: 98': '3: 99'],
-  "2+2(2*4):"['1: 18': '2: 19': '3: 20'],
-  "15/3*5(2+3+4):"['1: 226': '2: 227': '3: 228'],
-  "7*14/2+1:"['1: 49': '2: 50': '3: 51'],
-  "2*2*2*22*1+2:"['1: 176': '2: 177': '3: 178'],
-  "3+4-5*6:"['1: 22': '2: 23': '3: 24'],
-  "10/1*3+5-7(9-11):"['1: 48': '2: 49': '3: 50'],
-  "10-10*15:"['1: 140': '2: 141': '3: 142']
-}
+Question = ['4+5(2*3) = ','5-2+3*5 = ','2/2-1*100 = ','2+2-2*2/2(2*4) = ','15/3*5(2+3+4) = ','7*14/2+1 = ','2*2*2*22*1+2 = ','3+4-5*6/7 = ','10/1*3+5-7(9-11) = ','10-10*15 = ']
 
-score = 0  
-for question_number,question in enumerate(Questions):
-    print ("Question",question_number+1) 
-    print (question)
-    for options in Questions[question][:-1]: 
-        print (options)
-    user_choice = input("Make your choice : ")
-    if user_choice == Questions[question][-1]: 
-        score += 1 
+#Answers list
+Answers = ['34','18','-99','3.75','227','50','178','2.71','49','-140']
 
-def percentage(z):
-  if score == 1:
-    return(userName + "you got 10% correct")
-  if score == 2:
-    return(userName + "you got 20% correct")
-  if score == 3:
-    return(userName + "you got 30% correct")
-  if score == 4:
-    return(userName + "you got 40% correct")
-  if score == 5:
-    return(userName + "you got 50% correct")
-  if score == 6:
-    return(userName + "you got 60% correct")
-  if score == 7:
-    return(userName + "you got 70% correct")
-  if score == 8:
-    return(userName + "you got 80% correct")
-  if score == 9:
-    return(userName + "you got 90% correct")
-  if score == 10:
-    return(userName + "you got 100% correct")
+#prints the questions to the screen
+for x in Question:
+  Answers_0 = input(Question[current_Question])
+  current_Question+=1
+  Answers_1 = input(Question[current_Question])
+  current_Question+=1
+  Answers_2 = input(Question[current_Question])
+  current_Question+=1
+  Answers_3 = input(Question[current_Question])
+  current_Question+=1
+  Answers_4 = input(Question[current_Question])
+  current_Question+=1
+  Answers_5 = input(Question[current_Question])
+  current_Question+=1
+  Answers_6 = input(Question[current_Question])
+  current_Question+=1
+  Answers_7 = input(Question[current_Question])
+  current_Question+=1
+  Answers_8 = input(Question[current_Question])
+  current_Question+=1
+  Answers_9 = input(Question[current_Question])
+  current_Question+=1
+  Peace = input("How do you think you did out of 10? ")
 
+print(correct)
 print(percentage)
